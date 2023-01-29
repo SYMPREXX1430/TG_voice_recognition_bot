@@ -42,7 +42,7 @@ async def reply(message: types.Message):
                      f'{message.from_user.first_name}_{message.from_user.last_name}_'
                      f'{message.from_user.username} Err: NoVoiceRecognized  \n')
     except Exception as e:
-        text = 'Неизвестная ошибка. Разработчик обязательно посмотрит логи и все исправит (нет).'
+        text = 'Неизвестная ошибка. Разработчик обязательно посмотрит логи и все исправит.'
         logger.error(f'{datetime.datetime.today().strftime("%H:%M:%S")}_{message.from_user.id}_'
                      f'{message.from_user.first_name}_{message.from_user.last_name}_'
                      f'{message.from_user.username} Err: {e}  \n')
